@@ -1,0 +1,10 @@
+version: '2'
+services:
+    python:
+        container_name: python
+        build: .
+        image: mfrankiewicz/sp-python
+        ports:
+            - "80:8000"
+        volumes:
+            - ./src:/topr
